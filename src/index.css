@@ -1,0 +1,45 @@
+* {
+  color-scheme: dark;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: red;
+  color: gold;
+  font-size: 32px;
+  animation: 2s animate infinite;
+}
+button:hover {
+  background-color: white;
+  color: red;
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(.90);
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 4px 4px 18px 0px red;
+  }
+  50% {
+    box-shadow: 4px 4px 48px 0px yellow;
+  }
+  100% {
+    box-shadow: 4px 4px 18px 0px red;
+  }
+}
